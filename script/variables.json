@@ -1,0 +1,11 @@
+{
+    "White": "hsl(0, 0%, 100%)",
+    "DarkModeElements": "hsl(209, 23%, 22%)",
+    "DarkModeBackground": "hsl(207, 26%, 17%)",
+    "LightModeText": "hsl(200, 15%, 8%)",
+    "LightModeInput": "hsl(0, 0%, 52%)",
+    "LightModeBackground": "hsl(0, 0%, 98%)",
+    "HomeFont": "14px",
+    "DetailFont": "16px",
+    "fontWeight": "300"
+}

@@ -1,0 +1,118 @@
+@import '_variables.scss';
+body{
+margin: 0;
+padding: 0;
+font-family: 'Nunito Sans', 'sans-serif';
+box-sizing: border-box;
+background-color: $Light-Mode-Background;
+color: $Light-Mode-Text;
+font-size: $Home-font;
+}
+header nav{
+    background-color: $White;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    .toggle-Dark{
+        display: none;
+    }
+}
+.search{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        .search-name{
+        position: relative;  
+        color: $Light-Mode-Input;
+        label{
+            position: absolute;
+            top: 18%;
+            font-size: 24px;
+            left: 4%;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            background-color: $White;
+            border: none;
+            outline: none;
+            padding: 10px;
+        color: $Light-Mode-Input;
+
+            padding-left: 60px;
+        }
+    }
+        select{
+            position: relative;
+            width: 150px;
+    height: 46px;
+    text-align-last: center;
+    padding: 10px;
+    outline: none;
+    border: none;
+    option{
+        padding: 10px;
+    &:hover{
+        background-color: $Light-Mode-Input;
+    }      }
+}
+}
+.countries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .country {
+       cursor: pointer;
+        flex-basis: 22%;
+        margin: 1.5%;
+        background-color: $White;
+        box-shadow: 0px 8px 13px 0px #0000003d;
+       
+                img{
+            width: 100%;
+        }
+        h3,p{
+            padding-left: 15px;
+        }
+        p{
+            font-weight: 700;
+            span{
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px)  {
+    .countries .country{
+        flex-basis: 30%;
+    }
+    
+}
+@media screen and (max-width:700px)  {
+    .countries .country{
+        flex-basis: 47%;
+    }
+    
+}
+@media screen and (max-width:500px)  {
+    nav {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        white-space: nowrap;
+    font-size: 14px i !important;
+    
+    h1{
+        font-size: 18px !important;
+    }
+}
+    .countries .country{
+        flex-basis: 90%;
+    }
+    
+}

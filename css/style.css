@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', 'sans-serif';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+  color: #111517;
+  font-size: 14px;
+}
+
+header nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+header nav .toggle-Dark {
+  display: none;
+}
+
+.search {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search .search-name {
+  position: relative;
+  color: #858585;
+}
+
+.search .search-name label {
+  position: absolute;
+  top: 18%;
+  font-size: 24px;
+  left: 4%;
+}
+
+.search .search-name input {
+  height: 30px;
+  width: 300px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #858585;
+  padding-left: 60px;
+}
+
+.search select {
+  position: relative;
+  width: 150px;
+  height: 46px;
+  text-align-last: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.search select option {
+  padding: 10px;
+}
+
+.search select option:hover {
+  background-color: #858585;
+}
+
+.countries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countries .country {
+  cursor: pointer;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  margin: 1.5%;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 13px 0px #0000003d;
+          box-shadow: 0px 8px 13px 0px #0000003d;
+}
+
+.countries .country img {
+  width: 100%;
+}
+
+.countries .country h3, .countries .country p {
+  padding-left: 15px;
+}
+
+.countries .country p {
+  font-weight: 700;
+}
+
+.countries .country p span {
+  font-weight: 100;
+}
+
+@media screen and (max-width: 1000px) {
+  .countries .country {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .countries .country {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    white-space: nowrap;
+    font-size: 14px i !important;
+  }
+  nav h1 {
+    font-size: 18px !important;
+  }
+  .countries .country {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
