@@ -5,7 +5,6 @@ $(document).ready(function () {
     })
     $('.toggle-light, .toggle-Dark').click(() => {
         $('.toggle-light, .toggle-Dark').toggle();
-        console.log($('.toggle-light')[0].style.display);
 
         if ($('.toggle-light')[0].style.display === "none") {
             $('body').css({ "background-color": `${scssVars.DarkModeBackground}`, "color": `${scssVars.White}` })
@@ -30,6 +29,5 @@ $(document).ready(function () {
         }
 
     })
-
 
 });

@@ -15,6 +15,10 @@ $(document).ready(async function () {
          });
      });
  */
+    let scssVars;
+    $.getJSON('./script/variables.json', (vars) => {
+        return scssVars = vars
+    })
     let dd = new countriesData;
     dd.showAll(await dd.getData("all"))
 
@@ -26,15 +30,29 @@ $(document).ready(async function () {
         $('.countries').html("");
         if ($('select').val() != 'all') {
             dd.showAll(await dd.getData(`region/${$('select').val()}`))
+            goToCountry()
+            changeCountryBack()
         }
         else {
             dd.showAll(await dd.getData("all"))
+            goToCountry()
+            changeCountryBack()
         }
     }
     )
+    const changeCountryBack = () => {
+        if ($('.toggle-light')[0].style.display === "none") {
+            $('.country').css({ "background-color": scssVars.DarkModeElements })
+        } else {
+            $('.country').css({ "background-color": scssVars.White })
 
-    $(".country").click(async (e) => {
-        window.location.href = `../country.html?${e.currentTarget.children[1].innerHTML}`;
-    })
+        }
+    }
+    goToCountry()
+    function goToCountry() {
+        $(".country").click(async (e) => {
+            window.location.href = `country.html?${e.currentTarget.children[1].innerHTML}`;
+        })
+    }
 
 })

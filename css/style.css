@@ -74,6 +74,7 @@ header nav .toggle-Dark {
   padding: 10px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .search select option {

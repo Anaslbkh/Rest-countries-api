@@ -54,4 +54,6 @@ class countriesData {
             $(".borders p").append(`<span>${border}</span> `)
         })
     }
+
+
 }
